@@ -1,56 +1,30 @@
-# sketch-syntax-highlighter
+# Sketch Syntax Highlighter plugin
 
-_This plugin was created using `skpm`. For a detailed explanation on how things work, checkout the [skpm Readme](https://github.com/skpm/skpm/blob/master/README.md)._
+Automatically highlight the syntax of any code block, right within Sketch.
 
-## CLI Commands
+## 70+ built-in themes
 
-``` bash
-# build with hot reload
-npm run watch
+Highlight code using more than 70 popular themes. The plugin includes themes like Atom One, Monokai, Tomorrow Night, Solarized, Zenburn, and more.
 
-# build for production
-npm run build
-```
+## Live  preview
 
-## Custom Configuration
+The plugin shows a live preview of your code snippet automatically highlighted. Choose any of the light and dark themes and see the result in real time.
 
-### Babel
+## Language detection
 
-To customize Babel, you have two options:
+Automatically detects the language of the selected code snippet. The syntax highlighter supports more than 170 different languages, from Javascript and CSS, to PHP, Markdown, and more.
 
-* You may create a [`.babelrc`](https://babeljs.io/docs/usage/babelrc) file in your project's root directory. Any settings you define here will overwrite matching config-keys within skpm preset. For example, if you pass a "presets" object, it will replace & reset all Babel presets that skpm defaults to.
+## Installation
 
-* If you'd like to modify or add to the existing Babel config, you must use a `webpack.skpm.config.js` file. Visit the [Webpack](#webpack) section for more info.
+1. [Download the plugin] and unzip the package.(https://github.com/danielguillan/sketch-syntax-highlighter/releases/latest)
+2. Double click on `sketch-syntax-highlighter.sketchplugin`
 
-### Webpack
+## Usage
 
-To customize webpack create `webpack.skpm.config.js` file which exports function that will change webpack's config.
+Run the plugin from the Plugins > Syntax Highlighter.
 
-```js
-/**
- * Function that mutates original webpack config.
- * Supports asynchronous changes when promise is returned.
- *
- * @param {object} config - original webpack config.
- * @param {boolean} isPluginCommand - wether the config is for a plugin command or a resource
- **/
-module.exports = function (config, isPluginCommand) {
-  /** you can change config here **/
-}
-```
+Shortcut: <kbd>Shift</kbd>+<kbd>Control</kbd>+<kbd>Alt/Option</kbd>+<kbd>H</kbd>
 
-## Debugging
+---
 
-To view the output of your `console.log`, you have a few different options:
-* Open `Console.app` and look for the sketch logs
-* Use Safari's web inspector to debug your plugin's javascript context
-* Look at the `~/Library/Logs/com.bohemiancoding.sketch3/Plugin Output.log` file
-
-Skpm provides a convenient way to do the latter:
-
-```bash
-skpm log
-```
-
-The `-f` option causes `skpm log` to not stop when the end of logs is reached, but rather to wait for additional data to be appended to the input
-
+© 2017 Designed & built by [Daniel Guillan](https://www.twitter.com/danielguillan) and [Javi Sánchez-Marín](https://www.twitter.com/vieron) during the #DesignToolsBLN Sketch Hackathon.

@@ -1,14 +1,21 @@
 {
   "name": "sketch-syntax-highlighter",
-  "version": "0.1.0",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielguillan/sketch-syntax-highlighter.git"
+  },
   "engines": {
     "sketch": ">=3.0"
   },
   "skpm": {
     "name": "sketch-syntax-highlighter",
     "manifest": "src/manifest.json",
-    "main": "plugin.sketchplugin"
+    "main": "sketch-syntax-highlighter.sketchplugin"
   },
+  "resources": [
+    "resources/ui.js"
+  ],
   "scripts": {
     "build": "skpm-build",
     "watch": "skpm-build --watch",
@@ -16,6 +23,22 @@
     "postinstall": "npm run build && skpm-link"
   },
   "devDependencies": {
-    "@skpm/builder": "^0.1.4"
+    "@skpm/builder": "^0.1.4",
+    "@skpm/extract-loader": "^1.0.1",
+    "css-loader": "^0.28.7",
+    "gonzales-pe": "^4.0.3",
+    "html-loader": "^0.5.1",
+    "raw-loader": "^0.5.1",
+    "sketch-module-web-view": "git://github.com/vieron/sketch-module-web-view.git#expose-close-handler"
+  },
+  "dependencies": {
+    "color-name": "^1.1.3",
+    "color-string": "^1.5.2",
+    "highlight.js": "^9.12.0",
+    "juice": "^4.2.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "title-case": "^2.1.1",
+    "xml2js": "^0.4.19"
   }
 }

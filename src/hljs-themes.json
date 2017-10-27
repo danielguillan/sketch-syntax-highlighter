@@ -1,0 +1,391 @@
+{
+  "agate": {
+    "bgColor": "#333",
+    "isDark": true,
+    "color": "inherit"
+  },
+  "androidstudio": {
+    "color": "#a9b7c6",
+    "bgColor": "#282b2e",
+    "isDark": true
+  },
+  "arduino-light": {
+    "bgColor": "#FFFFFF",
+    "isDark": false,
+    "color": "#434f54"
+  },
+  "arta": {
+    "bgColor": "#222",
+    "isDark": true,
+    "color": "#aaa"
+  },
+  "ascetic": {
+    "bgColor": "white",
+    "isDark": false,
+    "color": "black"
+  },
+  "atelier-cave-dark": {
+    "bgColor": "#19171c",
+    "isDark": true,
+    "color": "#8b8792"
+  },
+  "atelier-cave-light": {
+    "bgColor": "#efecf4",
+    "isDark": false,
+    "color": "#585260"
+  },
+  "atelier-dune-dark": {
+    "bgColor": "#20201d",
+    "isDark": true,
+    "color": "#a6a28c"
+  },
+  "atelier-dune-light": {
+    "bgColor": "#fefbec",
+    "isDark": false,
+    "color": "#6e6b5e"
+  },
+  "atelier-estuary-dark": {
+    "bgColor": "#22221b",
+    "isDark": true,
+    "color": "#929181"
+  },
+  "atelier-estuary-light": {
+    "bgColor": "#f4f3ec",
+    "isDark": false,
+    "color": "#5f5e4e"
+  },
+  "atelier-forest-dark": {
+    "bgColor": "#1b1918",
+    "isDark": true,
+    "color": "#a8a19f"
+  },
+  "atelier-forest-light": {
+    "bgColor": "#f1efee",
+    "isDark": false,
+    "color": "#68615e"
+  },
+  "atelier-heath-dark": {
+    "bgColor": "#1b181b",
+    "isDark": true,
+    "color": "#ab9bab"
+  },
+  "atelier-heath-light": {
+    "bgColor": "#f7f3f7",
+    "isDark": false,
+    "color": "#695d69"
+  },
+  "atelier-lakeside-dark": {
+    "bgColor": "#161b1d",
+    "isDark": true,
+    "color": "#7ea2b4"
+  },
+  "atelier-lakeside-light": {
+    "bgColor": "#ebf8ff",
+    "isDark": false,
+    "color": "#516d7b"
+  },
+  "atelier-plateau-dark": {
+    "bgColor": "#1b1818",
+    "isDark": true,
+    "color": "#8a8585"
+  },
+  "atelier-plateau-light": {
+    "bgColor": "#f4ecec",
+    "isDark": false,
+    "color": "#585050"
+  },
+  "atelier-savanna-dark": {
+    "bgColor": "#171c19",
+    "isDark": true,
+    "color": "#87928a"
+  },
+  "atelier-savanna-light": {
+    "bgColor": "#ecf4ee",
+    "isDark": false,
+    "color": "#526057"
+  },
+  "atelier-seaside-dark": {
+    "bgColor": "#131513",
+    "isDark": true,
+    "color": "#8ca68c"
+  },
+  "atelier-seaside-light": {
+    "bgColor": "#f4fbf4",
+    "isDark": false,
+    "color": "#5e6e5e"
+  },
+  "atelier-sulphurpool-dark": {
+    "bgColor": "#202746",
+    "isDark": true,
+    "color": "#979db4"
+  },
+  "atelier-sulphurpool-light": {
+    "bgColor": "#f5f7ff",
+    "isDark": false,
+    "color": "#5e6687"
+  },
+  "atom-one-dark": {
+    "color": "#abb2bf",
+    "bgColor": "#282c34",
+    "isDark": true
+  },
+  "atom-one-light": {
+    "color": "#383a42",
+    "bgColor": "#fafafa",
+    "isDark": false
+  },
+  "brown-paper": {
+    "bgColor": "#b7a68e",
+    "isDark": false,
+    "color": "#363c69"
+  },
+  "codepen-embed": {
+    "bgColor": "#222",
+    "isDark": true,
+    "color": "#fff"
+  },
+  "color-brewer": {
+    "bgColor": "#fff",
+    "isDark": false,
+    "color": "#000"
+  },
+  "darcula": {
+    "bgColor": "#2b2b2b",
+    "isDark": true,
+    "color": "#bababa"
+  },
+  "dark": {
+    "bgColor": "#444",
+    "isDark": true,
+    "color": "#ddd"
+  },
+  "darkula": {},
+  "default": {
+    "bgColor": "#F0F0F0",
+    "isDark": false,
+    "color": "#444"
+  },
+  "docco": {
+    "color": "#000",
+    "bgColor": "#f8f8ff",
+    "isDark": false
+  },
+  "dracula": {
+    "bgColor": "#282a36",
+    "isDark": true,
+    "color": "#f8f8f2"
+  },
+  "far": {
+    "bgColor": "#000080",
+    "isDark": true,
+    "color": "#0ff"
+  },
+  "foundation": {
+    "bgColor": "#eee",
+    "isDark": false,
+    "color": "black"
+  },
+  "github-gist": {
+    "bgColor": "white",
+    "isDark": false,
+    "color": "#333333"
+  },
+  "github": {
+    "color": "#333",
+    "bgColor": "#f8f8f8",
+    "isDark": false
+  },
+  "googlecode": {
+    "bgColor": "white",
+    "isDark": false,
+    "color": "black"
+  },
+  "grayscale": {
+    "color": "#333",
+    "bgColor": "#fff",
+    "isDark": false
+  },
+  "gruvbox-dark": {
+    "bgColor": "#282828",
+    "isDark": true,
+    "color": "#ebdbb2"
+  },
+  "gruvbox-light": {
+    "bgColor": "#fbf1c7",
+    "isDark": false,
+    "color": "#3c3836"
+  },
+  "hopscotch": {
+    "bgColor": "#322931",
+    "isDark": true,
+    "color": "#b9b5b8"
+  },
+  "hybrid": {
+    "bgColor": "#373b41",
+    "isDark": true,
+    "color": "#c5c8c6"
+  },
+  "idea": {
+    "color": "#000",
+    "bgColor": "#fff",
+    "isDark": false
+  },
+  "ir-black": {
+    "bgColor": "#000",
+    "isDark": true,
+    "color": "#f8f8f8"
+  },
+  "kimbie.dark": {
+    "bgColor": "#221a0f",
+    "isDark": true,
+    "color": "#d3af86"
+  },
+  "kimbie.light": {
+    "bgColor": "#fbebd4",
+    "isDark": false,
+    "color": "#84613d"
+  },
+  "magula": {
+    "bgColor": "#f4f4f4",
+    "isDark": false,
+    "color": "black"
+  },
+  "mono-blue": {
+    "bgColor": "#eaeef3",
+    "isDark": false,
+    "color": "#00193a"
+  },
+  "monokai-sublime": {
+    "bgColor": "#23241f",
+    "isDark": true,
+    "color": "#f8f8f2"
+  },
+  "monokai": {
+    "bgColor": "#272822",
+    "isDark": true,
+    "color": "#ddd"
+  },
+  "obsidian": {
+    "bgColor": "#282b2e",
+    "isDark": true,
+    "color": "#e0e2e4"
+  },
+  "ocean": {
+    "bgColor": "#2b303b",
+    "isDark": true,
+    "color": "#c0c5ce"
+  },
+  "paraiso-dark": {
+    "bgColor": "#2f1e2e",
+    "isDark": true,
+    "color": "#a39e9b"
+  },
+  "paraiso-light": {
+    "bgColor": "#e7e9db",
+    "isDark": false,
+    "color": "#4f424c"
+  },
+  "pojoaque": {
+    "color": "#dccf8f",
+    "bgColor": "#181914",
+    "isDark": true
+  },
+  "purebasic": {
+    "bgColor": "#FFFFDF",
+    "isDark": false,
+    "color": "#000000"
+  },
+  "qtcreator_dark": {
+    "bgColor": "#000000",
+    "isDark": true,
+    "color": "#aaaaaa"
+  },
+  "qtcreator_light": {
+    "bgColor": "#ffffff",
+    "isDark": false,
+    "color": "#000000"
+  },
+  "railscasts": {
+    "bgColor": "#232323",
+    "isDark": true,
+    "color": "#e6e1dc"
+  },
+  "rainbow": {
+    "bgColor": "#474949",
+    "isDark": true,
+    "color": "#d1d9e1"
+  },
+  "routeros": {
+    "bgColor": "#F0F0F0",
+    "isDark": false,
+    "color": "#444"
+  },
+  "school-book": {
+    "color": "#3e5915"
+  },
+  "solarized-dark": {
+    "bgColor": "#002b36",
+    "isDark": true,
+    "color": "#839496"
+  },
+  "solarized-light": {
+    "bgColor": "#fdf6e3",
+    "isDark": false,
+    "color": "#657b83"
+  },
+  "sunburst": {
+    "bgColor": "#000",
+    "isDark": true,
+    "color": "#f8f8f8"
+  },
+  "tomorrow-night-blue": {
+    "bgColor": "#002451",
+    "isDark": true,
+    "color": "white"
+  },
+  "tomorrow-night-bright": {
+    "bgColor": "black",
+    "isDark": true,
+    "color": "#eaeaea"
+  },
+  "tomorrow-night-eighties": {
+    "bgColor": "#2d2d2d",
+    "isDark": true,
+    "color": "#cccccc"
+  },
+  "tomorrow-night": {
+    "bgColor": "#1d1f21",
+    "isDark": true,
+    "color": "#c5c8c6"
+  },
+  "tomorrow": {
+    "bgColor": "white",
+    "isDark": false,
+    "color": "#4d4d4c"
+  },
+  "vs": {
+    "bgColor": "white",
+    "isDark": false,
+    "color": "black"
+  },
+  "vs2015": {
+    "bgColor": "#1E1E1E",
+    "isDark": true,
+    "color": "#DCDCDC"
+  },
+  "xcode": {
+    "bgColor": "#fff",
+    "isDark": false,
+    "color": "black"
+  },
+  "xt256": {
+    "color": "#eaeaea",
+    "bgColor": "#000",
+    "isDark": true
+  },
+  "zenburn": {
+    "bgColor": "#3f3f3f",
+    "isDark": true,
+    "color": "#dcdcdc"
+  }
+}

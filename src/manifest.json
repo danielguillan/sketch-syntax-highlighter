@@ -3,15 +3,18 @@
   "bundleVersion": 1,
   "commands": [
     {
-      "name": "my-command",
-      "identifier": "my-command-identifier",
-      "script": "./my-command.js"
+      "name": "Syntax Highlighting",
+      "identifier": "highlight-syntax",
+      "shortcut": "ctrl alt shift h",
+      "script": "./sketch-syntax-highlighter.js",
+       "description": "Highlight the syntax of a code block",
+       "icon": "runner-icon.png"
     }
   ],
   "menu": {
-    "title": "sketch-syntax-highlighter",
+    "isRoot": true,
     "items": [
-      "my-command-identifier"
+      "highlight-syntax"
     ]
   }
 }

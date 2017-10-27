@@ -1,0 +1,205 @@
+html {
+  background: transparent;
+  overflow: hidden;
+  cursor: default;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+  user-select: auto;
+}
+
+#root {
+  position: relative;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.App-controls {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  padding-left: 300px;
+  text-align: right;
+}
+
+button {
+  font-size: 12px;
+  font-family: inherit;
+  padding: 0 12px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  color: #222222;
+}
+
+button + button {
+  margin-left: 8px;
+}
+
+button.primary {
+  background-color: #025CFF;
+  color: #fff;
+}
+
+.SyntaxPreview {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.SyntaxPreview code {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  padding-left: 240px;
+  padding-right: 60px;
+}
+
+.ThemeList {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background: #2B2C2B;
+  /* // overflow: hidden; */
+}
+
+.ThemeList-search {
+  height: 34px;
+  width: calc(100% - 20px);
+  padding: 0 10px;
+  border: none;
+  border-radius: 4px;
+  background: #000000;
+  -webkit-appearance: none;
+  color: #FFF;
+  outline: none;
+  flex: 0 0 auto;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.ThemeList-search::-webkit-input-placeholder {
+  color: #606060;
+  font-weight: bold;
+}
+
+.ThemeList-list {
+  overflow: auto;
+  /* height: 100%; */
+  flex: 1 1 auto;
+}
+
+.ThemeList-segmentedControl {
+  margin: 20px 0;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.ThemeList-listItem {
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #FFF;
+  padding: 0 20px;
+  font-size: 12px;
+}
+
+.ThemeList-listItem:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ThemeList-listItem.is-active {
+  color: #fff;
+  background-color: #025CFF;
+}
+
+
+.SegmentedControl {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #5F605F;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.SegmentedControl button {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 0;
+  margin: 0;
+  background-color: transparent;
+  color: #5F605F;
+}
+
+.SegmentedControl button.is-active {
+  background-color: #025CFF;
+  color: #fff;
+}
+
+.LanguagePicker {
+  position: absolute;
+  z-index: 20;
+  top: 20px;
+  right: 20px;
+  padding: 0 20px 0 6px;
+  -webkit-appearance: none;
+  border: 1px solid #5F605F;
+  border-radius: 4px;
+  height: 22px;
+  line-height: 22px;
+  color: #5F605F;
+  outline: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position:
+    calc(100% - 10px) 8px,
+    calc(100% - 6px) 8px;
+  background-size:
+    4px 4px,
+    4px 4px;
+}
+
+.LanguagePicker option {
+  font-size: 12px;
+  font-family: inherit;
+  color: inherit;
+  line-height: inherit;
+}

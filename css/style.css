@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+      font-family: -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol";
+}
+
+body {
+    font-size: 112.5%; /* 18px */
+    line-height: 1.33; /* 24px */
+    font-weight: 300;
+}
+
+.Header {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-top: 14vh;
+    padding-bottom: 14vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    align-items: stretch;
+}
+
+.Wrapper {
+    display: flex;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Header-description {
+    flex: 1;
+    margin-right: 16px;
+}
+
+.Header-preview {
+    display: flex;
+    flex: 1.5;
+}
+
+.Preview {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Icon {
+    margin-bottom: 2rem;
+}
+
+.Title {
+    font-weight: 1rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.Title-sketch {
+    font-size: 1.77rem; /* 32px */
+    font-weight: 300;
+}
+
+.Title-plugin {
+    display: block;
+    font-size: 3.11rem; /* 56px */
+}
+
+.Tagline {
+    font-size: 1.33rem;
+    margin-bottom: 2.66rem;
+    max-width: 36ch;
+}
+
+.DownloadButton {
+    color: #fff;
+    text-decoration: none;
+    background-color: #E41F6D;
+    font-size: 1.22em;
+    font-weight: 400;
+    padding: 16px 16px;
+    border-radius: 4px;
+}
+
+.DownloadButton-icon {
+    position: relative;
+    top: 4px;
+    margin-right: 16px;
+}
+
+.Features {
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    padding-top: 14vh;
+    padding-bottom: 14vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Feature {
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 32ch;
+}
+
+
+.Feature-title {
+    font-size: 2.33rem;
+    font-weight: 600;
+    color: #5E00CA;
+    line-height: 1.1;
+    margin-bottom: 1em;
+}
+
+.Feature-description {
+    color: #7A7580;
+}
+
+
+.UpcomingFeatures {
+    box-shadow: 0 3px 8px rgba(94, 0, 202, 0.1);
+    display: inline-block;
+    margin-left: auto;
+    margrint-right: auto;
+    padding: 1em;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #A39DAB;
+    margin-bottom: 4em;
+}
+
+.Footer {
+    text-align: center;
+    font-size:  0.66rem;
+    color: #5E00CA;
+    font-weight: 500;
+    padding-bottom: 4em;
+}
+
+.RunnerSupport {
+    margin-bottom: 4em;
+}
+
+a {
+    color: #5E00CA;
+}
+
+.Wrapper-center {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

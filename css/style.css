@@ -26,37 +26,64 @@ body {
 }
 
 .Header {
-    background-image: url(../img/background.png);
+    background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 8% 0%;
     color: #fff;
-    padding-top: 14vh;
-    padding-bottom: 14vh;
+    padding-top: 4em;
+    padding-bottom: 4em;
     padding-right: 5vw;
     padding-left: 5vw;
     align-items: stretch;
+    display: flex;
+    flex-direction: column;
 }
 
+@media screen and (min-width: 600px) {
+    .Header {
+        background-position: 0 0;
+        padding-top: 14vh;
+        padding-bottom: 14vh;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        height: 100vh;
+        max-height: 900px;
+        justify-content: center;
+    }
+}
+
+
 .Wrapper {
-    display: flex;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .Header-description {
-    flex: 1;
-    margin-right: 16px;
+    margin-bottom: 4em;
 }
 
-.Header-preview {
-    display: flex;
-    flex: 1.5;
+@media screen and (min-width: 600px) {
+    .Wrapper {
+        display: flex;
+    }
+
+    .Header-description {
+        flex: 1;
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+    .Header-preview {
+        display: flex;
+        flex: 1.5;
+    }
 }
 
 .Preview {
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 0;
 }
 
 .Icon {
@@ -101,24 +128,34 @@ body {
     margin-right: 16px;
 }
 
+@media screen and (min-width: 600px) {
+    .Features {
+        display: flex;
+        max-width: 1440px;
+        justify-content: space-between;
+        padding-top: 14vh;
+        padding-bottom: 14vh;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Feature {
+        margin-bottom: 0;
+    }
+}
+
 .Features {
-    display: flex;
-    max-width: 1440px;
-    justify-content: space-between;
-    padding-top: 14vh;
-    padding-bottom: 14vh;
-    padding-right: 5vw;
-    padding-left: 5vw;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 2em;
 }
 
 .Feature {
     padding-left: 1em;
     padding-right: 1em;
     max-width: 32ch;
+    margin-bottom: 2em;
 }
-
 
 .Feature-title {
     font-size: 2.33rem;
@@ -142,6 +179,8 @@ body {
     border-radius: 4px;
     font-weight: 600;
     color: #A39DAB;
+    margin-left: 1em;
+    margin: 1em;
     margin-bottom: 4em;
 }
 

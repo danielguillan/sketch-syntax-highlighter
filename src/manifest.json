@@ -1,13 +1,15 @@
 {
+  "name": "Sketch Syntax Highlighter",
+  "description": "Syntax highlighter for code snippets, right within Sketch.",
   "compatibleVersion": 3,
   "bundleVersion": 1,
   "commands": [
     {
-      "name": "Syntax Highlighting",
+      "name": "Syntax Highlighter",
       "identifier": "highlight-syntax",
       "shortcut": "ctrl alt shift h",
       "script": "./sketch-syntax-highlighter.js",
-       "description": "Highlight the syntax of a code block",
+       "description": "Highlight the syntax of a code snippet",
        "icon": "runner-icon.png"
     }
   ],

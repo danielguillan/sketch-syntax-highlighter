@@ -12,6 +12,11 @@ window.sketchBridge = function(payload) {
     CODE_SNIPPET = payload.source;
 }
 
+// Disable the context menu
+if (process.env.NODE_ENV === 'production') {
+    document.addEventListener('contextmenu', e => e.preventDefault())
+}
+
 pluginCall('getSourceCode');
 
 class App extends React.Component {

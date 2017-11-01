@@ -7,6 +7,9 @@ const outputPath = path.resolve(__dirname, '../src/hljs-themes.json');
 const themesPath = path.join(process.cwd(), 'node_modules/highlight.js/styles/');
 const themes = fs.readdirSync(themesPath).filter((path) => path.endsWith('.css'));
 
+const BLACKLIST = [
+    'darkula', // alias for darcula
+]
 
 function parseTheme(filename) {
   const themeCss = fs.readFileSync(path.join(themesPath, filename), { encoding: 'utf-8' });
@@ -69,7 +72,9 @@ const convertedThemes = themes.reduce((memo, filename) => {
 
     const themeName = filename.replace(/\.css/ig, '');
 
-    memo[themeName] = theme;
+    if (BLACKLIST.indexOf(themeName) === -1) {
+        memo[themeName] = theme;
+    }
 
     return memo;
 }, {});

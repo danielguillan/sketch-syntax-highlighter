@@ -2,6 +2,8 @@
 
 Automatically highlight the syntax of any code block, right within Sketch.
 
+[![Sketch Syntax Highlighter Screenshot](/../gh-pages/img/sketch-syntax-highlighter-plugin.png)](https://danielguillan.github.io/sketch-syntax-highlighter/)
+
 ## 70+ built-in themes
 
 Highlight code using more than 70 popular themes. The plugin includes themes like Atom One, Monokai, Tomorrow Night, Solarized, Zenburn, and more.

@@ -81,6 +81,8 @@ class App extends React.Component {
             selectedLanguage: lang
         });
 
+        pluginCall('selectLanguage', lang);
+
         this.highlight(lang);
     }
 

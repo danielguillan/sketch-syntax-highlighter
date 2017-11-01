@@ -14,10 +14,12 @@ const FONT_WEIGHTS_MAP = {
 }
 
 let initialSelection;
+let selectedLanguage;
 
 export default function(context) {
     const document = context.document;
     initialSelection = context.selection.slice(0);
+    selectedLanguage = 'auto';
 
     const textLayers = getTextLayers(initialSelection);
     const firstTextLayer = textLayers[0];
@@ -45,6 +47,10 @@ export default function(context) {
         shouldKeepAround: true,
         resizable: true,
         handlers: {
+            selectLanguage: function(lang) {
+                selectedLanguage = lang
+            },
+
             getSourceCode: function() {
                 const source = `sketchBridge(${JSON.stringify({ source: `${firstTextLayer.stringValue()}` })})`;
 
@@ -102,7 +108,7 @@ function highlight(textLayer, theme) {
     }
 
     const sourceCode = textLayer.stringValue();
-    const highlightedHTML = `<div class="hljs">${highlightText(sourceCode)}</div>`;
+    const highlightedHTML = `<div class="hljs">${highlightText(sourceCode, selectedLanguage)}</div>`;
     const themeCSS = require('!!raw-loader!highlight.js/styles/' + theme + '.css');
     const inlineStyledHTML = juice(`<style>${themeCSS}</style>${highlightedHTML}`);
     const xmlParserOptions = {
@@ -122,7 +128,7 @@ function highlight(textLayer, theme) {
         const { outputText, fragments } = getStyledRanges(tree);
         const font = NSFont.fontWithName_size(FONT_WEIGHTS_MAP.regular, fontSize);
         const fontSize = textLayer.fontSize();
-        const baseColor = themeSyles.color;
+        const baseColor = !themeSyles.color || themeSyles.color == 'inherit' ? '#333' : themeSyles.color;
 
         textLayer.setStringValue(outputText);
 
@@ -203,9 +209,14 @@ function inlineCSSToObject(cssText = '') {
     return properties
 }
 
-function highlightText(str) {
-    // const result = hljs.highlight('js', textLayer.stringValue());
-    const result = hljs.highlightAuto(str);
+function highlightText(str, lang) {
+    let result;
+
+    if (lang && lang != 'auto') {
+        result = hljs.highlight(lang, str);
+    } else {
+        result = hljs.highlightAuto(str);
+    }
 
     return result.value;
 }

@@ -28,7 +28,7 @@
                     <span class="Title-plugin">Syntax Highlighter</span>
                 </h1>
 
-                <p class="Tagline">Automatically highlight the syntax of any code block, right within Sketch.</p>
+                <p class="Tagline">Automatically highlight the syntax of any code snippet, right within Sketch.</p>
                 <p class="Download">
                     <a class="DownloadButton" href="https://github.com/danielguillan/sketch-syntax-highlighter/releases/latest">
                         <img class="DownloadButton-icon" src="./img/icon-download.svg" width="20" height="24" alt="">Download Now
@@ -76,5 +76,12 @@
             <a href="https://www.twitter.com/vieron">Javi Sánchez-Marín</a> during #DesignToolsBLN Sketch Hackathon.
         </p>
     </footer>
+    <script type="text/javascript">
+        fetch('https://api.github.com/repos/danielguillan/sketch-syntax-highlighter/releases/latest')
+            .then((response) => response.json())
+            .then((release) => {
+                document.querySelector('.DownloadButton').setAttribute('href', release.assets[0].browser_download_url);
+            });
+    </script>
 </body>
 </html>

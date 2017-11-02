@@ -1,6 +1,6 @@
 {
   "name": "sketch-syntax-highlighter",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Syntax highlighter for code snippets, right within Sketch.",
   "repository": {
     "type": "git",

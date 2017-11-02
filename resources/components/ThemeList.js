@@ -145,7 +145,7 @@ export default class ThemeList extends React.Component {
               <div className="ThemeList-segmentedControl">
                   <nav className="SegmentedControl">
                       <button data-value="dark" onClick={this.onLuminosityChange} className={this.state.luminosity === 'dark' ? 'is-active' : ''}>Dark</button>
-                      <button data-value="light" onClick={this.onLuminosityChange} className={this.state.luminosity === 'light' ? 'is-active' : ''}>Ligth</button>
+                      <button data-value="light" onClick={this.onLuminosityChange} className={this.state.luminosity === 'light' ? 'is-active' : ''}>Light</button>
                   </nav>
               </div>
               <input ref="search" className="ThemeList-search" type="search" placeholder="Search..." value={this.state.searchValue} onChange={this.onSearch} autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" />

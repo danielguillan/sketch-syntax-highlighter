@@ -6,6 +6,7 @@ import colorString from "color-string";
 import colorName from "color-name";
 import WebUI from "sketch-module-web-view";
 
+const SKETCH_VERSION = MSApplicationMetadata.metadata().appVersion;
 const BG_LAYER_NAME = 'ssh-bg';
 const FONT_WEIGHTS_MAP = {
     regular: 'Menlo-Regular',
@@ -268,5 +269,9 @@ function createBgRect(layer, options) {
   group.resizeToFitChildrenWithOption(0);
 
   // Select group
-  group.select_byExpandingSelection(true, false);
+  if (SKETCH_VERSION < 45) {
+    group.select_byExpandingSelection(true, true);
+  } else {
+    group.select_byExtendingSelection(true, true);
+  }
 }

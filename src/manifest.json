@@ -1,6 +1,9 @@
 {
   "name": "Sketch Syntax Highlighter",
   "description": "Syntax highlighter for code snippets, right within Sketch.",
+  "author": "Daniel Guillan and Javi Sánchez-Marín",
+  "authorEmail": "daniel.guillan@gmail.com",
+  "homepage": "danielguillan.github.io/sketch-syntax-highlighter/",
   "compatibleVersion": 3,
   "bundleVersion": 1,
   "commands": [

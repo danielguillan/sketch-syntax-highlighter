@@ -42,7 +42,7 @@ export default function(context) {
         blurredBackground: false,
         onlyShowCloseButton: true,
         title: "Sketch Syntax Highlighter",
-        hideTitleBar: false,
+        hideTitleBar: true,
         onlyShowCloseButton: true,
         shouldKeepAround: true,
         resizable: true,

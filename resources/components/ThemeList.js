@@ -148,7 +148,7 @@ export default class ThemeList extends React.Component {
                       <button data-value="light" onClick={this.onLuminosityChange} className={this.state.luminosity === 'light' ? 'is-active' : ''}>Ligth</button>
                   </nav>
               </div>
-              <input ref="search" className="ThemeList-search" type="search" placeholder="Search..." value={this.state.searchValue} onChange={this.onSearch} autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+              <input ref="search" className="ThemeList-search" type="search" placeholder="Search..." value={this.state.searchValue} onChange={this.onSearch} autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" />
               <ul ref="list" className="ThemeList-list">
                   { themes }
               </ul>

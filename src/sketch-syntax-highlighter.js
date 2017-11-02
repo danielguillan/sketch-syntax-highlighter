@@ -6,6 +6,7 @@ import colorString from "color-string";
 import colorName from "color-name";
 import WebUI from "sketch-module-web-view";
 
+const SKETCH_VERSION = MSApplicationMetadata.metadata().appVersion;
 const BG_LAYER_NAME = 'ssh-bg';
 const FONT_WEIGHTS_MAP = {
     regular: 'Menlo-Regular',
@@ -128,13 +129,11 @@ function highlight(textLayer, theme) {
         const { outputText, fragments } = getStyledRanges(tree);
         const font = NSFont.fontWithName_size(FONT_WEIGHTS_MAP.regular, fontSize);
         const fontSize = textLayer.fontSize();
-        const baseColor = !themeSyles.color || themeSyles.color == 'inherit' ? '#333' : themeSyles.color;
 
         textLayer.setStringValue(outputText);
 
-        // Set base font and color
+        // Set base font
         textLayer.setFont(font);
-        textLayer.textColor = MSImmutableColor.colorWithSVGString(baseColor);
 
         textLayer.setIsEditingText(true);
         fragments.forEach((fragment, i ) => {
@@ -160,14 +159,16 @@ function highlight(textLayer, theme) {
 
 
 function getStyledRanges(parentNode, memo) {
+    const styles = inlineCSSToObject((parentNode.attrs || {}).style);
+    const hasColor = (styles.color && styles.color != 'inherit');
+
     if (!memo) {
         memo = {
             fragments: [],
-            textBuffer: ''
+            textBuffer: '',
+            parentColor: hasColor ? styles.color : '#333',
         };
     }
-
-    const styles = inlineCSSToObject((parentNode.attrs || {}).style);
 
     (parentNode.children || []).forEach((node) => {
         if (node["#name"] === "__text__") {
@@ -184,10 +185,14 @@ function getStyledRanges(parentNode, memo) {
                 stopIndex: stopIndex,
                 style: {
                     ...styles,
-                    color: styles.color,
+                    color: hasColor ? styles.color : memo.parentColor,
                 }
             });
         } else if (node.children && node.children.length) {
+            if (hasColor) {
+                memo.parentColor = styles.color;
+            }
+
             getStyledRanges(node, memo);
         }
     });
@@ -264,5 +269,9 @@ function createBgRect(layer, options) {
   group.resizeToFitChildrenWithOption(0);
 
   // Select group
-  group.select_byExpandingSelection(true, false);
+  if (SKETCH_VERSION < 45) {
+    group.select_byExpandingSelection(true, true);
+  } else {
+    group.select_byExtendingSelection(true, true);
+  }
 }

@@ -18,7 +18,7 @@ Automatically detects the language of the selected code snippet. The syntax high
 
 ## Installation
 
-1. [Download the plugin] and unzip the package.(https://github.com/danielguillan/sketch-syntax-highlighter/releases/latest)
+1. [Download the plugin](https://github.com/danielguillan/sketch-syntax-highlighter/releases/latest) and unzip the package.
 2. Double click on `sketch-syntax-highlighter.sketchplugin`
 
 ## Usage
